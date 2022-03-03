@@ -4,8 +4,16 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: black;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color:white;
+}
+
+header{
+  position: relative;
 }
 
 .header-top {
@@ -86,16 +94,71 @@ body {
   width: 100%;
 }
 
-main {
-  height: 958px;
+.container {
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footerTop {
+  background-color: #0273DD;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footerTop .foterTopContainer {
+  display: flex;
+  align-items: center;
+}
+
+.footerTop .foterTopContainer .imgContainer {
+  width: 60px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footerTop .foterTopContainer .imgContainer img {
+  height: 70%;
+}
+
+.footerTop .foterTopContainer .text {
+  padding: 0 5px;
+  text-transform: uppercase;
+}
+
+footer {
+  background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
+}
+footer .button-bottom{
+  position: absolute;
+  top:-106px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color:#0273DD;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border: none;
+}
+
+main {
+  height: 606px;
 }
 
 h1 {
   font-size: 20px;
 }
 
-.container {
+main .container {
   margin: 20px auto;
   width: 1100px;
   display: flex;
@@ -143,4 +206,120 @@ button {
   height: 30px;
   color: white;
 }
+
+
+.footerCenter{
+  height: 500px;
+  width: 85%;
+  margin: auto;
+  background-image:url(../images/dc-logo-bg.png);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.container.center{
+  height: 88%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.TextFCenter div, 
+h1{
+  text-transform: uppercase;
+}
+
+.TextFCenter div{
+  padding: 2px 0;
+  font-size: 12px;
+}
+
+.containerTextFooterC{
+  margin: 20px 0 0 0;
+  width: 400px;
+  height: 77%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.textContainerF{
+  width: 160px;
+}
+
+.TextFCenter{
+  font-size: 15px;
+  padding: 20px 0;
+  color: gray;
+}
+
+
+.footerBottom{
+  height: 100px;
+  background-color: rgb(51, 50, 50);
+  color: #0273DD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+
+}
+
+button{
+  height: 50px;
+  width: 180px;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: 2px solid #0273DD;
+  background-color: transparent;
+  color: white;
+}
+.bottomRight{
+  line-height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.bottomRight img{
+  margin: 0 5px;
+}
+
+.icons{
+  padding:0 10px;
+}
+.container.B{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1100px;
+}
+
+.blue{
+  color: #0273DD;
+}
+
+.footerCenter .text-b-c{
+  color: gray;
+  font-size: 14px;
+}
+
+header button{
+  background-color:#0273DD;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border: none;
+  width: 250px;
+}
+.button-top{
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  top:393px;
+  left: 198px; 
+}
+.button-bottom{
+  width: 180px;
+  margin-top: 35px;
+}
+
+
 

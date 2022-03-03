@@ -52,7 +52,10 @@
         </div>
       </div>
     </div>
-      <div class="jumbotron">
-          <img class="jumbotronImage" src="{{ asset('images/jumbotron.jpg') }}" alt="jumbotron">
-      </div>
+    <div class="jumbotron">
+        <img class="jumbotronImage" src="{{ asset('images/jumbotron.jpg') }}" alt="jumbotron">
+    </div>
+    <div class="container">
+      <button class="button-top">current series</button>
+    </div>
 </header>

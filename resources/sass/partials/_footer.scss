@@ -1,0 +1,39 @@
+footer{
+  color: white;
+  background-image: url(../../../public/images/footer-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  .footerTop{
+    background-color: #0273DD;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+        .footerTopContainer{
+          display: flex;
+          align-items: center;
+          .imgContainer{
+            width: 60px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            img{
+              height: 70%;
+            }
+          }
+          
+        }
+        
+    }
+  } 
+}
+
