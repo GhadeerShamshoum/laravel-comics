@@ -3,7 +3,7 @@
         <span>DC power visa &reg;</span>
         <span>additinal dc sites</span>
     </div>
-
+    <div class="header-bottom">
       <div class="container-menu">
         <div class="headerLeft">
           <div id="logo">
@@ -51,6 +51,7 @@
           </nav>
         </div>
       </div>
+    </div>
       <div class="jumbotron">
           <img class="jumbotronImage" src="{{ asset('images/jumbotron.jpg') }}" alt="jumbotron">
       </div>

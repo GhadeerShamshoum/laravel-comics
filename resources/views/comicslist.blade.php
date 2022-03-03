@@ -1,16 +1,19 @@
 @extends('layouts.app')
 @section('content')
-    <div class="comics">
-        <div class="container">
-        
-            @foreach ($comics as $index => $format)
-            <div class="card">
-                <img src="{{$format['thumb']}}" >
-                <div class="overlay">
-                    {{ $format['title'] }}
+    <main>
+        <div class="comics">
+            <div class="container">  
+                @foreach ($comics as $index => $format)
+                <div class="card">
+                    <div class="containerImg">
+                    <img src="{{$format['thumb']}}" >
+                    </div> 
+                    <div class="containerText">
+                        {{ $format['series'] }}
+                    </div>
                 </div>
+                @endforeach
             </div>
-            @endforeach
         </div>
-    </div>
+    </main>
 @endsection

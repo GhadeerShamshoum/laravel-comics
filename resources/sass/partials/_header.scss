@@ -10,52 +10,55 @@
     }
 }
 
-.container-menu{
-    width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .headerLeft{
-    height: 60px;
-    #logo{
-      height: 100%;
-      img{
-        height: 100%;
-      }
-    }
-  }
-  .headerRight{
-    width: 920px;
-    nav{
-      line-height: 80px;
-      ul{
+.header-bottom{
+    background-color: white;
+    .container-menu{
+        width: 1200px;
+        margin: auto;
         display: flex;
         justify-content: space-between;
-        list-style-type: none;
-        li{
-          a{
-            color: black;
-            font-size: 13px;
-            font-weight: 800;
-            text-decoration: none;
-            margin: 0 10px;
-            padding-bottom: 30px;
-            text-transform: uppercase;
-            &:hover{
-              border-bottom:4px solid #0273DD;
-              color:#0273DD;
+        align-items: center;
+      }
+      .headerLeft{
+        height: 60px;
+        #logo{
+          height: 100%;
+          img{
+            height: 100%;
+          }
+        }
+      }
+      .headerRight{
+        width: 920px;
+        nav{
+          line-height: 80px;
+          ul{
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            li{
+              a{
+                color: black;
+                font-size: 13px;
+                font-weight: 800;
+                text-decoration: none;
+                margin: 0 10px;
+                padding-bottom: 30px;
+                text-transform: uppercase;
+                &:hover{
+                  border-bottom:4px solid #0273DD;
+                  color:#0273DD;
+                }
+              }
             }
           }
         }
       }
-    }
-  }
-  .active{
-    color: #0273DD !important;
-    border-bottom:4px solid #0273DD;
-  }
+      .active{
+        color: #0273DD !important;
+        border-bottom:4px solid #0273DD;
+      }
+}
 
   .jumbotron{
    height: 320px;
