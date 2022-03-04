@@ -18,6 +18,11 @@ Route::get('/', function () {
     return view('comicslist',['comics'=>$array_comics]);
 });
 
+Route::get('/comic', function () {
+    $array_comics = config('comics');
+    return view('comicslist1');
+});
+
 // Route::get('/', function () {
 //     $links  = [
 //             [
