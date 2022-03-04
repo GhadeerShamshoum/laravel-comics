@@ -1,70 +1,55 @@
-* {
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap);* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
-
-body{
-    font-family: 'Roboto', sans-serif;
-    background-color: black;
-    color:white;
+body {
+  background-color: black;
 }
 
-header{
+header {
   position: relative;
 }
-
-.header-top {
+header .header-top {
   background-color: #0273DD;
   display: flex;
   justify-content: end;
 }
-
-.header-top span {
+header .header-top span {
   margin: 0 10px;
 }
-
-.header-bottom {
+header .header-bottom {
   background-color: white;
 }
-
-.header-bottom .container-menu {
+header .header-bottom .container-menu {
   width: 1200px;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.header-bottom .headerLeft {
+header .header-bottom .headerLeft {
   height: 60px;
 }
-
-.header-bottom .headerLeft #logo {
+header .header-bottom .headerLeft #logo {
   height: 100%;
 }
-
-.header-bottom .headerLeft #logo img {
+header .header-bottom .headerLeft #logo img {
   height: 100%;
 }
-
-.header-bottom .headerRight {
+header .header-bottom .headerRight {
   width: 920px;
 }
-
-.header-bottom .headerRight nav {
+header .header-bottom .headerRight nav {
   line-height: 80px;
 }
-
-.header-bottom .headerRight nav ul {
+header .header-bottom .headerRight nav ul {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
 }
-
-.header-bottom .headerRight nav ul li a {
+header .header-bottom .headerRight nav ul li a {
   color: black;
   font-size: 13px;
   font-weight: 800;
@@ -73,35 +58,52 @@ header{
   padding-bottom: 30px;
   text-transform: uppercase;
 }
-
-.header-bottom .headerRight nav ul li a:hover {
+header .header-bottom .headerRight nav ul li a:hover {
   border-bottom: 4px solid #0273DD;
   color: #0273DD;
 }
-
-.header-bottom .active {
+header .header-bottom .active {
   color: #0273DD !important;
   border-bottom: 4px solid #0273DD;
 }
-
-.jumbotron {
+header .jumbotron {
   height: 320px;
   width: 100%;
   overflow: hidden;
 }
-
-.jumbotron img {
+header .jumbotron img {
   width: 100%;
 }
-
-.container {
-  display: flex;
-  height: 100%;
-  justify-content: space-around;
-  align-items: center;
+header .button-top {
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  top: 393px;
+  left: 198px;
+  background-color: #0273DD;
 }
 
-.footerTop {
+footer {
+  color: white;
+  background-image: url(../images/footer-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+footer .button-f-top {
+  width: 180px;
+  margin-top: 35px;
+  position: absolute;
+  top: -106px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #0273DD;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border: none;
+}
+footer .footerTop {
   background-color: #0273DD;
   height: 150px;
   width: 100%;
@@ -109,61 +111,141 @@ header{
   justify-content: space-around;
   align-items: center;
 }
-
-.footerTop .foterTopContainer {
+footer .footerTop .footerTopContainer {
   display: flex;
   align-items: center;
 }
-
-.footerTop .foterTopContainer .imgContainer {
+footer .footerTop .footerTopContainer .imgContainer {
   width: 60px;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-
-.footerTop .foterTopContainer .imgContainer img {
+footer .footerTop .footerTopContainer .imgContainer img {
   height: 70%;
 }
-
-.footerTop .foterTopContainer .text {
+footer .footerTop .footerTopContainer .text {
   padding: 0 5px;
   text-transform: uppercase;
 }
 
-footer {
-  background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
-  background-size: cover;
+.footerCenter {
+  height: 500px;
+  width: 85%;
+  margin: auto;
+  background-image: url(../images/dc-logo-bg.png);
+  background-position: right;
   background-repeat: no-repeat;
-  position: relative;
 }
-footer .button-bottom{
-  position: absolute;
-  top:-106px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color:#0273DD;
-  color: white;
+
+.container.center {
+  height: 88%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.TextFCenter div,
+h1 {
   text-transform: uppercase;
-  padding: 10px 15px;
-  border: none;
+}
+
+.TextFCenter div {
+  padding: 2px 0;
+  font-size: 12px;
+}
+
+.containerTextFooterC {
+  margin: 20px 0 0 0;
+  width: 400px;
+  height: 77%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.textContainerF {
+  width: 160px;
+}
+
+.TextFCenter {
+  font-size: 15px;
+  padding: 20px 0;
+  color: gray;
+}
+
+.footerBottom {
+  height: 100px;
+  background-color: #333232;
+  color: #0273DD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+.footerBottom .container.B {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1100px;
+}
+.footerBottom .container.B .left {
+  height: 50px;
+  width: 180px;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: 2px solid #0273DD;
+  background-color: transparent;
+  color: white;
+}
+
+.bottomRight {
+  line-height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.bottomRight img {
+  margin: 0 5px;
+}
+
+.icons {
+  padding: 0 10px;
+}
+
+.blue {
+  color: #0273DD;
+}
+
+.footerCenter .text-b-c {
+  color: gray;
+  font-size: 14px;
 }
 
 main {
   height: 606px;
+  position: relative;
 }
 
 h1 {
   font-size: 20px;
 }
 
-main .container {
-  margin: 20px auto;
+.container {
   width: 1100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 1100px;
+}
+
+.comics {
+  display: flex;
+  justify-content: center;
+}
+
+.container.main {
+  margin: 30px 0 0 0;
 }
 
 button {
@@ -191,135 +273,21 @@ button {
   margin: 20px 10px;
   height: 200px;
 }
-
 .card .containerImg {
   width: 100%;
   height: 170px;
   overflow: hidden;
 }
-
 .card .containerImg img {
   width: 100%;
 }
-
 .card .containerText {
   height: 30px;
   color: white;
 }
 
-
-.footerCenter{
-  height: 500px;
-  width: 85%;
-  margin: auto;
-  background-image:url(../images/dc-logo-bg.png);
-  background-position: right;
-  background-repeat: no-repeat;
-}
-.container.center{
-  height: 88%;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.TextFCenter div, 
-h1{
-  text-transform: uppercase;
-}
-
-.TextFCenter div{
-  padding: 2px 0;
-  font-size: 12px;
-}
-
-.containerTextFooterC{
-  margin: 20px 0 0 0;
-  width: 400px;
-  height: 77%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.textContainerF{
-  width: 160px;
-}
-
-.TextFCenter{
-  font-size: 15px;
-  padding: 20px 0;
-  color: gray;
-}
-
-
-.footerBottom{
-  height: 100px;
-  background-color: rgb(51, 50, 50);
-  color: #0273DD;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-
-}
-
-button{
-  height: 50px;
-  width: 180px;
-  font-size: 20px;
-  text-transform: uppercase;
-  border: 2px solid #0273DD;
-  background-color: transparent;
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: black;
   color: white;
 }
-.bottomRight{
-  line-height: 100px;
-  display: flex;
-  align-items: center;
-}
-
-.bottomRight img{
-  margin: 0 5px;
-}
-
-.icons{
-  padding:0 10px;
-}
-.container.B{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 1100px;
-}
-
-.blue{
-  color: #0273DD;
-}
-
-.footerCenter .text-b-c{
-  color: gray;
-  font-size: 14px;
-}
-
-header button{
-  background-color:#0273DD;
-  color: white;
-  text-transform: uppercase;
-  padding: 10px 15px;
-  border: none;
-  width: 250px;
-}
-.button-top{
-  font-size: 20px;
-  font-weight: 700;
-  position: absolute;
-  top:393px;
-  left: 198px; 
-}
-.button-bottom{
-  width: 180px;
-  margin-top: 35px;
-}
-
-
-

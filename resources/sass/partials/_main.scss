@@ -1,17 +1,26 @@
 main{
-    height: 958px;
+    height: 606px;
     position: relative;
  } 
  h1{
    font-size: 20px;
  }
  .container{
-     margin: 20px auto;
-     width: 1100px;
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
+   width: 1100px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   width: 1100px;
+  }
+  .comics{
+    display: flex;
+    justify-content: center;
+  }
+  .container.main{
+   margin:30px 0 0 0;
  }
+
+ 
  button{
    
    color: white;

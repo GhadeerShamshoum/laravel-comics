@@ -2,7 +2,7 @@
 @section('content')
     <main>
         <div class="comics">
-            <div class="container">  
+            <div class="container main">  
                 @foreach ($comics as $index => $format)
                 <div class="card">
                     <div class="containerImg">

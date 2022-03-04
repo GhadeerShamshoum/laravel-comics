@@ -1,10 +1,23 @@
 footer{
   color: white;
-  background-image: url(../../../public/images/footer-bg.jpg);
+  background-image: url(../images/footer-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
+  position: relative;
+  .button-f-top{
+    width: 180px;
+    margin-top: 35px;
+    position: absolute;
+    top:-106px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:#0273DD;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border: none;
+  }
+  
   .footerTop{
     background-color: #0273DD;
     height: 150px;
@@ -12,28 +25,127 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    .container{
+    .footerTopContainer{
+      display: flex;
+      align-items: center;
+      .imgContainer{
+        width: 60px;
+        height: 50px;
         display: flex;
-        justify-content: space-around;
         align-items: center;
-        
-        .footerTopContainer{
-          display: flex;
-          align-items: center;
-          .imgContainer{
-            width: 60px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            img{
-              height: 70%;
-            }
-          }
-          
-        }
-        
-    }
-  } 
+        justify-content: flex-end;
+        img{
+          height: 70%;
+        }  
+      }
+      .text{
+        padding: 0 5px;
+       text-transform: uppercase;    
+      }
+    }  
+  }
+} 
+ 
+  .footerCenter{
+    height: 500px;
+    width: 85%;
+    margin: auto;
+    background-image:url(../images/dc-logo-bg.png);
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+
+.container.center{
+  height: 88%;
+  display: flex;
+  justify-content: flex-start;
 }
+
+.TextFCenter div, 
+h1{
+  text-transform: uppercase;
+}
+
+.TextFCenter div{
+  padding: 2px 0;
+  font-size: 12px;
+}
+
+.containerTextFooterC{
+  margin: 20px 0 0 0;
+  width: 400px;
+  height: 77%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.textContainerF{
+  width: 160px;
+}
+
+.TextFCenter{
+  font-size: 15px;
+  padding: 20px 0;
+  color: gray;
+}
+
+
+.footerBottom{
+  height: 100px;
+  background-color: rgb(51, 50, 50);
+  color: #0273DD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  .container.B{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1100px;
+    .left{
+      height: 50px;
+      width: 180px;
+      font-size: 20px;
+      text-transform: uppercase;
+      border: 2px solid #0273DD;
+      background-color: transparent;
+      color: white;
+    }
+  }
+}
+
+
+
+
+.bottomRight{
+  line-height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.bottomRight img{
+  margin: 0 5px;
+}
+
+.icons{
+  padding:0 10px;
+}
+
+.blue{
+  color: #0273DD;
+}
+
+.footerCenter .text-b-c{
+  color: gray;
+  font-size: 14px;
+}
+
+
+
+
+
+
 

@@ -1,37 +1,37 @@
 
 <footer>
-  <button class="button-bottom">load more</button>
+  <button class="button-f-top">load more</button>
   <div class="footerTop">
     <div class="container">
-      <div class="foterTopContainer">
+      <div class="footerTopContainer">
           <div class="imgContainer">
             <img src="{{ asset('images/buy-comics-digital-comics.png') }}" alt="comics-digital">
           </div>
-          <div class="text">digital comics</div>
+          <div class="text-f-t">digital comics</div>
       </div>
-      <div class="foterTopContainer">
+      <div class="footerTopContainer">
           <div class="imgContainer">
             <img src="{{ asset('images/buy-comics-merchandise.png') }}" alt="comics-digital">
           </div>
-          <div class="text">dc merchandise</div>
+          <div class="text-f-t">dc merchandise</div>
       </div>
-      <div class="foterTopContainer">
+      <div class="footerTopContainer">
           <div class="imgContainer">
             <img src="{{ asset('images/buy-comics-subscriptions.png') }}" alt="comics-digital">
           </div>
           <div class="text">subscription</div>
       </div>
-      <div class="foterTopContainer">
+      <div class="footerTopContainer">
           <div class="imgContainer">
             <img src="{{ asset('images/buy-comics-shop-locator.png') }}" alt="comics-digital">
           </div>
-          <div class="text">comic shop locator</div>
+          <div class="text-f-t">comic shop locator</div>
       </div>
-      <div class="foterTopContainer">
+      <div class="footerTopContainer">
           <div class="imgContainer">
             <img src="{{ asset('images/buy-dc-power-visa.svg') }}" alt="comics-digital">
           </div>
-          <div class="text">dc power visa</div>
+          <div class="text-f-t">dc power visa</div>
       </div>
     </div>
   </div>
@@ -96,7 +96,7 @@
   </div>
   <div class="footerBottom">
         <div class="container B">
-        <button>sign-up now!</button>
+        <button class="left">sign-up now!</button>
         <div class="bottomRight">follow us
           <img src="{{ asset('images/footer-facebook.png') }}" alt="">
           <img src="{{ asset('images/footer-twitter.png') }}" alt="">
